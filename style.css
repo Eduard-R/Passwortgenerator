@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    border: 3px solid rgb(0, 199, 0);
+    border: 3px solid rgb(0, 119, 0);
     border-radius: 10px;
     padding: 10px;
 }
