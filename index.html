@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Passwortgenerator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="headline">
+                <h1>Passwortgenerator</h1>
+                <p>Bitte gib die gewünschte Passwortlänge in Ziffern an</p>
+                <p>und wähle dann mindestens eine Checkbox aus.</p>
+            </div>
+        </header>
+        <main>
+            <div id="wrapper">
+                <div class="input">
+                    <div>
+                        <input class="password-length" type="number" placeholder="Passwortlänge">
+                    </div>
+                    <div>
+                        <input type="checkbox" class="numbers-checkbox" name="numbers">
+                        <label for="numbers">Zahlen</label>
+                        <br>
+                        <input type="checkbox" class="characters-checkbox" name="character">
+                        <label for="character">Buchstaben</label>
+                        <br>
+                        <input type="checkbox" class="special-checkbox" name="special">
+                        <label for="special">Sonderzeichen</label>
+                    </div>
+                    <div>
+                        <button class="generate">Generieren</button>
+                    </div>
+                </div>
+                <div class="output">
+                    <textarea name="result" id="result" rows="10"></textarea>
+                </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>     
+        <script src="index.js"></script>
+    </body>
+    
+</html>
