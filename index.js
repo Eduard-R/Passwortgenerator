@@ -1,10 +1,12 @@
-var CHARACTERS = 'abcdefghijklmnopqrstuvwxyz';
+var SMALLCHARACTERS = 'abcdefghijklmnopqrstuvwxyz';
 var NUMBERS = '0123456789';
 var SPECIAL = '!"§$%&/()=?;:_,.-+#';
+var BIGCHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 var numberCheckbox = document.querySelector('.numbers-checkbox');
-var charactersCheckbox = document.querySelector('.characters-checkbox');
+var smallcharactersCheckbox = document.querySelector('.smallcharacters-checkbox');
 var specialCheckbox = document.querySelector('.special-checkbox');
+var bigcharactersCheckbox = document.querySelector('.bigcharacters-checkbox');
 
 var outputArea = document.getElementById('result');
 
@@ -18,8 +20,12 @@ document.querySelector('.generate').addEventListener('click', function() {
         resultString = resultString + NUMBERS;
     }
 
-    if (charactersCheckbox.checked) {
-        resultString = resultString + CHARACTERS;
+    if (smallcharactersCheckbox.checked) {
+        resultString = resultString + SMALLCHARACTERS;
+    }
+
+    if (bigcharactersCheckbox.checked) {
+        resultString = resultString + BIGCHARACTERS;       
     }
 
     if (specialCheckbox.checked) {
